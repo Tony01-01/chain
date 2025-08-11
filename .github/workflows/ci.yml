@@ -127,7 +127,7 @@ jobs:
     needs: try-runtime-prepare
     steps:
       - name: Download runtime artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: try_runtime
           path: try_runtime
@@ -152,7 +152,7 @@ jobs:
     needs: try-runtime-prepare
     steps:
       - name: Download runtime artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: try_runtime
           path: try_runtime
